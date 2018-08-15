@@ -1,7 +1,8 @@
 // 1. Import the initial variables
-@import "node_modules/bulma/sass/utilities/initial-variables";
-@import "node_modules/bulma/sass/utilities/functions";
-
+@import "node_modules/bulma/sass/utilities/_all";
+@import "node_modules/bulma/sass/base/_all";
+@import "node_modules/bulma/sass/grid/tiles";
+@import "node_modules/bulma/bulma";
 // 2. Set your own initial variables
 // Update blue
 $blue: #72d0eb;

@@ -1,16 +1,20 @@
 const path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var extractPlugin = new ExtractTextPlugin({
-   filename: 'main.css'
+   filename: 'css/main.css'
 });
 
 
 module.exports = {
 	entry: './src/js/index.js',
 	output: {
-		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'public')
+		filename: 'js/bundle.js',
+		path: path.resolve(__dirname, 'dist')
 	},
+  devServer: {
+    port: 9000,
+    watchContentBase: true
+  },
 	module: {
 		rules: [
 		{
@@ -28,9 +32,9 @@ module.exports = {
 			use: extractPlugin.extract({
 				use: ['css-loader', 'sass-loader']
 			})
-		}]
+		}],
 	},
 	plugins: [
-		extractPlugin
+		extractPlugin,
 	]
 };

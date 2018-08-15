@@ -1,4 +1,4 @@
-/* Main JS File */ 
+/* Main JS File */
 
 /**
  * Load de main SASS file
@@ -11,4 +11,4 @@ require('../sass/main.scss')
  * Now you'll be ready to develop your application
  * using bulma style.
  */
-console.log('Your app is running...')
+console.log('Your app idasdasdsadsdsas dasdasruning...ddd')
